@@ -1,0 +1,38 @@
+{
+  "repo": "rle-mask-topology",
+  "user": "Computer-vision dataset curators inspecting a small COCO-style binary mask.",
+  "pain": "Area alone hides disconnected fragments and enclosed holes; row/column order mistakes can silently move a mask.",
+  "capability": "Decode uncompressed column-major COCO RLE and report connected components, perimeters, holes and bounding boxes under explicit dual connectivity.",
+  "alternatives": [
+    "opencv/opencv",
+    "cocodataset/cocoapi",
+    "isarandi/rlemasklib"
+  ],
+  "query": "RLE mask sort:stars-desc",
+  "distinct": "No existing portfolio utility computes segmentation-mask topology. The users and numerical contract differ from temporal scheduling, operation histories, audio markers and BER structures.",
+  "limits": "size=[height,width],each1..512; integer counts list<=262145, starting with background and alternating, zeros allowed, exact sum=height*width. No compressed counts strings,polygons,images,labels or batch masks. Decode fully to bounded raster. Foreground4-connected,background8-connected; holes are background components that do not touch raster edge. Euler=foreground components-holes. Perimeter counts unit foreground/background/outside edges. Bounding box[x,y,width,height],<=4096 foreground components. Not a continuous/polygon topology or diagonal perimeter estimator.",
+  "expected": "The invented3x3 ring has area8,one component,one hole and unit-edge perimeter16.",
+  "checks": "50 seeded pixel-set oracles, bounding boxes/ring/diagonal connectivity, column-major decoding, empty/full/zero-run masks and malformed RLE rejection.",
+  "primary": [
+    "https://github.com/cocodataset/cocoapi/blob/master/common/maskApi.c",
+    "https://docs.opencv.org/4.x/d3/dc0/group__imgproc__shape.html"
+  ],
+  "topics": [
+    "coco",
+    "rle",
+    "segmentation",
+    "python"
+  ],
+  "occurrence": "GH-20261022",
+  "state": "VALIDATED",
+  "demand": "Inferred workflow need; no verified request for this new product.",
+  "inventory_compared": 213,
+  "acceptance": [
+    "The invented3x3 ring has area8,one component,one hole and unit-edge perimeter16.",
+    "50 seeded pixel-set oracles, bounding boxes/ring/diagonal connectivity, column-major decoding, empty/full/zero-run masks and malformed RLE rejection.",
+    "Clean wheel-installed console outside checkout; meaningful malformed input and source preservation."
+  ],
+  "discovery": "Searchable problem-focused README/topics and runnable invented fixture, no outreach or adoption promise.",
+  "originality": "Original AI-assisted implementation; standard algorithms independently reimplemented, no third-party code/prose copied.",
+  "mutual_distinction": "Numeric constraints, concurrent register semantics, WAV cue references, ASN.1 byte boundaries and raster-mask topology are separate users, inputs and contracts."
+}

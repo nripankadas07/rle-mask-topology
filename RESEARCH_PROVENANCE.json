@@ -1,0 +1,120 @@
+{
+  "query": {
+    "query": "RLE mask sort:stars-desc",
+    "observed": "2026-10-22T06:18:36.315Z",
+    "url": "https://github.com/search?q=RLE%20mask%20sort%3Astars-desc&type=repositories",
+    "results": [
+      "isarandi/rlemasklib",
+      "dpt/MotionMasks",
+      "ALucek/pii-masking-rlenv",
+      "devildreamss/Matterport-Mask-RCNN-End-to-End-Implementation",
+      "WillKirkmanM/rle",
+      "mukund-ks/RLE-To-PNG",
+      "ILYAGRISH/yolo-annotator",
+      "AnniRanok/fashion-segmentation-end-to-end",
+      "WillKirkmanM/parse-psd",
+      "WillKirkmanM/parse-xcf"
+    ],
+    "error": null
+  },
+  "comparables": [
+    {
+      "repo": "opencv/opencv",
+      "url": "https://github.com/opencv/opencv",
+      "stars": 91282,
+      "pushed_at": "2026-10-22T06:05:48Z",
+      "archived": false,
+      "default_branch": "5.x",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "observed": "2026-10-22T06:19:53.349Z",
+      "workflow": "Broad compiled computer-vision library; connected component APIs expose4/8 connectivity and statistics.",
+      "sampled_open_items": [
+        {
+          "number": 30449,
+          "title": "ptcloud: reject PLY vertex count above INT_MAX in readNamedProperties \ud83e\udd16\ud83e\udd16\ud83e\udd16",
+          "url": "https://github.com/opencv/opencv/pull/30449",
+          "body_excerpt": "`PlyDecoder::readNamedProperties` (used by `cv::loadGaussianSplats` for `.ply` files) allocates its output with `values.create((int)m_vertexCount, ...)`, but the fill loop runs `for (size_t i = 0; i < m_vertexCount; i++)` and writes through `values.ptr<float>((int)i)`. `m_vertexCount` is the `size_t` parsed from the `element vertex N` header line, so `N = 4294967297` truncates to a 1-row Mat while"
+        },
+        {
+          "number": 30448,
+          "title": "core: skip OCL ConvertToSaturate CV_32F->CV_32S on Apple OpenCL with Intel GPU",
+          "url": "https://github.com/opencv/opencv/pull/30448",
+          "body_excerpt": "Fixes the `macOS-x64 / BuildAndTest` failure introduced by #30386, which currently makes 5.x macOS-x64 CI red for every PR (e.g. #30302):\n\n```\n[ RUN      ] OCL_MatrixOperation/ConvertToSaturate.Accuracy/16, where GetParam() = (CV_32F, CV_32S)\ntest_matrix_operation.cpp:247: Failure\nExpected equality of these values:\n  0\n  cv::countNonZero(diff)\n    Which is: 2\n```\n\n**Evidence that this is a driver "
+        },
+        {
+          "number": 30447,
+          "title": "RVV: add fused rotation for three-channel images",
+          "url": "https://github.com/opencv/opencv/pull/30447",
+          "body_excerpt": "## Pull Request Readiness Checklist\n\n- [x] I agree to contribute to the project under the Apache 2 License.\n- [x] To the best of my knowledge, the proposed patch is not based on code under GPL or another license incompatible with OpenCV.\n- [x] The PR targets the proper branch (`4.x`).\n- [x] Related work is referenced below.\n- [x] Accuracy tests and performance tests are included. No additional ope"
+        }
+      ]
+    },
+    {
+      "repo": "cocodataset/cocoapi",
+      "url": "https://github.com/cocodataset/cocoapi",
+      "stars": 6388,
+      "pushed_at": "2024-04-17T05:14:06Z",
+      "archived": false,
+      "default_branch": "master",
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "observed": "2026-10-22T06:19:53.112Z",
+      "workflow": "COCO dataset APIs and C mask algorithms with Python/Matlab/Lua examples; source-build instructions.",
+      "sampled_open_items": [
+        {
+          "number": 694,
+          "title": "No utf-8 encoding for image filenames",
+          "url": "https://github.com/cocodataset/cocoapi/issues/694",
+          "body_excerpt": "Using coco files e.g. with German `Umlaute` fails for ML training, as coco files are opened in ascii encoding mode, hence filenames containing \u00e4,\u00f6,\u00fc are not found.\n\nTo fix this, change \n`coco.py` line 81 from  \n``` python\nwith open(annotation_file, 'r') as f:\n```\nto \n``` python\nwith open(annotation_file, 'r', encoding='utf-8') as f:\n```\n"
+        },
+        {
+          "number": 693,
+          "title": "test-dev2017 evaluation server unavailable",
+          "url": "https://github.com/cocodataset/cocoapi/issues/693",
+          "body_excerpt": "This test server is no longer in use. How can we evaluate the results on the test set?\n\u201chttps://codalab.lisn.upsaclay.fr/competitions/7403\u201d"
+        },
+        {
+          "number": 691,
+          "title": "[COCO Object Detection] test-dev2017 evaluation server unavailable \u2014 migration to Codabench?",
+          "url": "https://github.com/cocodataset/cocoapi/issues/691",
+          "body_excerpt": "Hi COCO team,\n\nFor COCO bbox detection, the Codalab evaluation entry (e.g. https://codalab.lisn.upsaclay.fr/competitions/7384) is no longer accepting new submissions. \n\nIs there an official replacement (e.g. on Codabench,  https://codalab.lisn.upsaclay.fr/), or any migration plan/timeline for test-dev2017 evaluation?\n\nThanks!\n"
+        }
+      ]
+    },
+    {
+      "repo": "isarandi/rlemasklib",
+      "url": "https://github.com/isarandi/rlemasklib",
+      "stars": 26,
+      "pushed_at": "2026-10-16T14:37:39Z",
+      "archived": false,
+      "default_branch": "main",
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "observed": "2026-10-22T06:19:53.046Z",
+      "workflow": "Python/Cython operations directly on compressed RLE masks, pip setup and examples.",
+      "sampled_open_items": []
+    }
+  ],
+  "highest_star_relevant_found": "opencv/opencv",
+  "primary_sources": [
+    "https://github.com/cocodataset/cocoapi/blob/master/common/maskApi.c",
+    "https://docs.opencv.org/4.x/d3/dc0/group__imgproc__shape.html"
+  ],
+  "scope": "Scoped live stars-desc GitHub keyword search, supplemented with established relevant alternatives after README/docs/source inspection; not an exhaustive global ranking. No competitor installs, timing, reliability or support response were measured. Sampled open items can include PRs; none is treated as demand for this new tool."
+}
