@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "rle-mask-topology"
+version = "0.1.0"
+description = "Decode uncompressed column-major COCO RLE and report connected components, perimeters, holes and bounding boxes under explicit dual connectivity."
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = []
+[project.scripts]
+rle-mask-topology = "rle_mask_topology:main"
+[tool.setuptools]
+py-modules = ["rle_mask_topology"]

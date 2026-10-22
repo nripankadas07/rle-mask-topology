@@ -1,0 +1,28 @@
+{
+  "size": [
+    3,
+    3
+  ],
+  "area": 8,
+  "component_count": 1,
+  "holes": 1,
+  "euler_characteristic": 0,
+  "perimeter": 16,
+  "components": [
+    {
+      "area": 8,
+      "bbox": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "perimeter": 16
+    }
+  ],
+  "connectivity": {
+    "foreground": 4,
+    "background": 8
+  },
+  "order": "components by first foreground pixel in row-major scan; input is column-major RLE"
+}
